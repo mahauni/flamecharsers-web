@@ -12,7 +12,7 @@ const Organization = (props: Props) => {
         props.valks.length > 0 ? (<section className="org" style={{ backgroundColor: props.organization.secondColor }}>
             <h3 style={{ borderColor: props.organization.firstColor }}>{props.organization.name}</h3>
             <div className="valks">
-                {props.valks.map(valk => <Valkyrie valk={valk} />)}
+                {props.valks.map(valk => <Valkyrie key={valk.name} valk={valk} bannerColor={props.organization.firstColor}/>)}
             </div>
         </section>) : null
     )

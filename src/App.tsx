@@ -22,7 +22,6 @@ function App() {
     const [valk, setValk] = useState<Valk[]>([]);
 
     const onNewValkAdd = (valkyrie: Valk) => {
-        console.log(valkyrie);
         setValk([...valk, valkyrie]);
     }
 

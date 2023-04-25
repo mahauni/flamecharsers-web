@@ -3,12 +3,13 @@ import "./Valkyrie.css"
 
 type Props = {
     valk: Valk,
+    bannerColor: string,
 }
 
 const Valkyrie = (props: Props) => {
     return (
         <div className="valk">
-            <div className="header">
+            <div className="header" style={{ backgroundColor: props.bannerColor }}>
                 <img src="https://github.com/mahauni.png" alt="Lucas Raoni" />
             </div>
             <div className="footer">
